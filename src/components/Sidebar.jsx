@@ -6,6 +6,8 @@ import {
   FiHome,
   FiMail,
   FiUser,
+  FiMenu,
+  FiX,
 } from "react-icons/fi";
 import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { PiGraduationCap } from "react-icons/pi";
@@ -21,9 +23,21 @@ const navItems = [
   { label: "Contact", href: "#contact", icon: <FiMail /> },
 ];
 
+import { useState } from "react";
+
 function Sidebar({ contact }) {
+  const [open, setOpen] = useState(false);
+
   return (
-    <aside className="site-sidebar">
+    <aside className={`site-sidebar ${open ? "open" : ""}`}>
+      <button
+        className="mobile-toggle"
+        aria-label={open ? "Close navigation" : "Open navigation"}
+        aria-expanded={open}
+        onClick={() => setOpen((v) => !v)}
+      >
+        {open ? <FiX /> : <FiMenu />}
+      </button>
       <a className="brand" href="#home" aria-label="Raj Kapoor Gautam">
         <img src="/raj-kapoor-gautam.jpeg" alt="" />
         <span>
@@ -32,9 +46,14 @@ function Sidebar({ contact }) {
         </span>
       </a>
 
-      <nav className="nav-menu" aria-label="Portfolio navigation">
+      <nav className={`nav-menu ${open ? "show" : ""}`} aria-label="Portfolio navigation">
         {navItems.map((item, index) => (
-          <a className={index === 0 ? "active" : ""} href={item.href} key={item.label}>
+          <a
+            className={index === 0 ? "active" : ""}
+            href={item.href}
+            key={item.label}
+            onClick={() => setOpen(false)}
+          >
             {item.icon}
             <span>{item.label}</span>
           </a>
@@ -61,7 +80,7 @@ function Sidebar({ contact }) {
           </a>
         </div>
       </div>
-    </aside>
+      </aside>
   );
 }
 
