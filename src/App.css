@@ -247,8 +247,8 @@
 .theme-toggle {
   position: fixed;
   right: 24px;
-  bottom: 22px;
-  z-index: 30;
+  top: 24px;
+  z-index: 999;
   width: 82px;
   height: 38px;
   border: 1px solid var(--line);
