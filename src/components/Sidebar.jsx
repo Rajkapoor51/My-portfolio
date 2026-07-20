@@ -7,8 +7,8 @@ import {
   FiMail,
   FiUser,
 } from "react-icons/fi";
-import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 import { PiGraduationCap } from "react-icons/pi";
+import { FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
 const navItems = [
   { label: "Home", href: "#home", icon: <FiHome /> },
@@ -16,7 +16,7 @@ const navItems = [
   { label: "Skills", href: "#skills", icon: <FiGrid /> },
   { label: "Experience", href: "#experience", icon: <FiBriefcase /> },
   { label: "Projects", href: "#projects", icon: <FiCode /> },
-  { label: "Education", href: "#skills", icon: <PiGraduationCap /> },
+  { label: "Education", href: "#education", icon: <PiGraduationCap /> },
   { label: "Achievements", href: "#experience", icon: <FiAward /> },
   { label: "Contact", href: "#contact", icon: <FiMail /> },
 ];
@@ -28,7 +28,7 @@ function Sidebar({ contact }) {
         <img src="/raj-kapoor-gautam.jpeg" alt="" />
         <span>
           <strong>Raj Kapoor</strong>
-          <small>Full Stack Developer</small>
+          <small>MERN Stack Developer</small>
         </span>
       </a>
 

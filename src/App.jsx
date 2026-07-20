@@ -35,19 +35,19 @@ const skillGroups = [
     title: "Frontend",
     tone: "green",
     icon: <FaReact />,
-    items: ["ReactJS", "JavaScript (ES6)", "HTML5", "CSS3", "Bootstrap", "Tailwind CSS", "Redux"],
+    items: ["React.js", "Redux", "JavaScript (ES6)", "HTML5", "CSS3", "Responsive UI"],
   },
   {
     title: "Backend",
     tone: "blue",
     icon: <FaLaravel />,
-    items: ["Laravel", "PHP", "RESTful APIs"],
+    items: ["Node.js", "Express.js", "RESTful APIs", "Authentication", "CRUD Applications"],
   },
   {
     title: "Database",
     tone: "purple",
     icon: <BsDatabase />,
-    items: ["MySQL", "MongoDB", "PostgreSQL"],
+    items: ["MongoDB", "MySQL", "PostgreSQL", "Database Optimization"],
   },
   {
     title: "DevOps & CI/CD",
@@ -59,19 +59,19 @@ const skillGroups = [
     title: "Tools & Others",
     tone: "cyan",
     icon: <BsTools />,
-    items: ["Postman", "VS Code", "Jira", "Agile Methodology", "ChatGPT", "Cursor", "Debugging", "API Integration"],
+    items: ["Postman", "VS Code", "Jira", "ClickUp", "Debugging", "API Integration"],
   },
   {
-    title: "CMS & E-commerce",
+    title: "Additional Experience",
     tone: "teal",
     icon: <FaLaravel />,
-    items: ["WordPress", "Elementor", "Custom Theme & Plugin Development", "WooCommerce", "Squarespace"],
+    items: ["Laravel", "PHP", "WordPress"],
   },
   {
     title: "Donation Platforms",
     tone: "rose",
     icon: <FaGithub />,
-    items: ["FundraiseUp", "CharityStack", "GiveWP", "Skrraggle", "GiveCloud", "GiveLovely", "Donorbox"],
+    items: ["GiveWP", "FundraiseUp", "Donorbox", "Payment Integrations"],
   },
   {
     title: "Hosting & Cloud",
@@ -95,28 +95,28 @@ const skillGroups = [
 
 const projects = [
   {
-    name: "Aviotik",
-    stack: "Laravel",
+    name: "Victor",
+    stack: "React.js · Redux",
     color: "sky",
-    text: "Flight booking platform using EaseMyTrip APIs with admin panel.",
+    text: "Beauty-products platform with responsive modules, authentication, dashboards, CRUD functionality, and REST API integration.",
   },
   {
-    name: "Skrragle",
-    stack: "ReactJS",
+    name: "Skrraggle",
+    stack: "React.js · Node.js",
     color: "rose",
-    text: "Donation management platform with widgets, forms, and analytics.",
+    text: "Donation platform with campaign and donor management, embeddable widgets, analytics dashboards, and data exports.",
   },
   {
     name: "Adams Center",
-    stack: "Laravel",
+    stack: "React.js · Node.js",
     color: "gold",
-    text: "Donation platform integrated with Salesforce APIs and payment gateways.",
+    text: "Donation platform with Salesforce API integration, secure card, Google Pay, and Apple Pay payment flows.",
   },
   {
-    name: "STV-AI-Studio",
-    stack: "ReactJS",
+    name: "STy-AI-Studio",
+    stack: "React.js · Python · Flask",
     color: "ice",
-    text: "AI image processing app for background removal powered by Flask.",
+    text: "Shopify admin app for AI image processing, background removal, and React-powered API integrations.",
   },
   {
     name: "NADA India",
@@ -129,23 +129,23 @@ const projects = [
 const experience = [
   {
     company: "Dipole Tech Innovation Pvt. Ltd.",
-    role: "Software Engineer",
-    period: "2023 - Present",
+    role: "Software Engineer | MERN Stack Developer",
+    period: "March 2024 - June 2026",
     points: [
-      "Lead development work for scalable, production-ready web applications.",
-      "Build CI/CD workflows and manage deployment processes.",
-      "Integrate GTM, GA4, payment gateways, and third-party services.",
-      "Develop features with ReactJS, Laravel, PHP, and cloud-based tools.",
+      "Develop and maintain scalable applications using React.js, Node.js, Express.js, MongoDB, Laravel, and REST APIs.",
+      "Build and consume RESTful APIs for dynamic product features and third-party integrations.",
+      "Integrate Stripe, Authorize.Net, Google Pay, ACH, and analytics tools including GTM and GA4.",
+      "Improve application performance and manage production support, debugging, database optimization, Docker, CI/CD, and cloud deployments.",
     ],
   },
   {
     company: "Laitkor Consultancy Services Pvt. Ltd.",
     role: "Associate Software Engineer",
-    period: "2021 - 2023",
+    period: "July 2022 - Nov 2023",
     points: [
-      "Developed application modules using ReactJS, Laravel, PHP, and JavaScript.",
-      "Integrated third-party APIs and improved database query performance.",
-      "Supported debugging, testing, maintenance, and feature improvements.",
+      "Developed web-application modules using React.js, Laravel, PHP, JavaScript, MySQL, and REST APIs.",
+      "Created Flask APIs for Shopify automation, AI image processing, background removal, and product-image enhancements.",
+      "Built CRUD systems, integrated third-party APIs, and supported testing, debugging, optimization, and Agile delivery.",
     ],
   },
 ];
@@ -169,17 +169,16 @@ function About() {
       <div className="about-copy">
         <SectionTitle>About Me</SectionTitle>
         <p>
-          I'm a Full Stack Developer with 3.5+ years of experience building
-          practical, scalable, and user-friendly web applications.
+          I'm a MERN Stack Developer with 3.5+ years of experience building
+          responsive, scalable, and API-driven web applications.
         </p>
         <p>
-          I work mainly with ReactJS, Laravel, PHP, JavaScript, APIs, and CI/CD
-          workflows.
+          I specialize in React.js, Node.js, Express.js, MongoDB, JavaScript,
+          REST API development, and modern deployment workflows.
         </p>
         <p>
-          I enjoy turning business requirements into clean interfaces, reliable
-          backend systems, optimized performance, analytics tracking, and secure
-          payment integrations.
+          I also bring hands-on Laravel, PHP, and WordPress experience, with a
+          focus on reliable backend systems, performance, payments, and production support.
         </p>
 
         <div className="info-row">

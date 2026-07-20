@@ -7,16 +7,16 @@ import { AiOutlineHeart } from "react-icons/ai";
 const stats = [
   { icon: <HiOutlineBadgeCheck />, value: "3.5+", label: "Years Experience" },
   { icon: <IoCodeSlashOutline />, value: "10+", label: "Projects Delivered" },
-  { icon: <TbNetwork />, value: "React", label: "Frontend Focus" },
-  { icon: <AiOutlineHeart />, value: "Laravel", label: "Backend Focus" },
+  { icon: <TbNetwork />, value: "MERN", label: "Core Stack" },
+  { icon: <AiOutlineHeart />, value: "Node.js", label: "Backend Focus" },
 ];
 
 const highlights = [
-  "ReactJS",
-  "Laravel",
-  "PHP",
+  "React.js",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
   "REST APIs",
-  "MySQL",
   "CI/CD",
 ];
 
@@ -41,14 +41,14 @@ function Hero({ theme, onToggleTheme }) {
         <p className="eyebrow">Hello, I'm</p>
         <h1>Raj Kapoor Gautam</h1>
         <p className="role-line">
-          <strong>Full Stack Developer</strong>
-          <span>ReactJS Developer</span>
-          <strong>Laravel Engineer</strong>
+          <strong>MERN Stack Developer</strong>
+          <span>React.js Developer</span>
+          <strong>Node.js Engineer</strong>
         </p>
         <p className="hero-summary">
-          I build practical and scalable web applications using ReactJS,
-          Laravel, PHP, JavaScript, APIs, databases, analytics tools, payment
-          gateways, and modern deployment workflows.
+          I build responsive, API-driven applications with React.js, Node.js,
+          Express.js, MongoDB, and modern deployment workflows. I also bring
+          production experience with Laravel, PHP, and WordPress.
         </p>
 
         <div className="highlight-list">
@@ -60,7 +60,7 @@ function Hero({ theme, onToggleTheme }) {
         <div className="hero-actions">
           <a
             className="primary-action"
-            href="/Raj_Kapoor_Gautam_Resume_10.pdf"
+            href="/Raj_Kapoor_Gautam_MERN_Resume.pdf"
             download
           >
             Download CV <FiDownload />
@@ -77,7 +77,7 @@ function Hero({ theme, onToggleTheme }) {
         </div>
         <div className="availability-card">
           <span>Available for</span>
-          <strong>Web App Development</strong>
+          <strong>MERN Stack Roles</strong>
         </div>
       </div>
 
